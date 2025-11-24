@@ -941,7 +941,7 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 **Dinindu Akalanka**
 
 - GitHub: [@DininduAkalanka](https://github.com/DininduAkalanka)
-- Repository: [[UniMate-AI-Powered-University-Companion-V1](https://github.com/DininduAkalanka/UniMate-AI-Powered-University-Companion-V1](https://github.com/DininduAkalanka/UniMatePro-AI-Powered-University-Companion-/tree/main))
+- Repository: https://github.com/DininduAkalanka/UniMatePro-AI-Powered-University-Companion-
 ---
 ## 🙏 Acknowledgments
 
