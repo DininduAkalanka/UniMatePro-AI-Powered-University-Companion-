@@ -930,33 +930,6 @@ await debugNotifications(userId);
 
 ---
 
-## 🤝 Contributing
-
-We welcome contributions! Please follow these guidelines:
-
-### **Development Workflow**
-1. Fork the repository
-2. Create a feature branch: `git checkout -b feature/amazing-feature`
-3. Commit changes: `git commit -m 'Add amazing feature'`
-4. Push to branch: `git push origin feature/amazing-feature`
-5. Open a Pull Request
-
-### **Code Standards**
-- Follow TypeScript best practices
-- Use ESLint configuration
-- Write descriptive commit messages
-- Add comments for complex logic
-- Update README for new features
-
-### **PR Requirements**
-- [ ] Code builds without errors
-- [ ] ESLint passes
-- [ ] No console errors in runtime
-- [ ] Tested on iOS and Android
-- [ ] Documentation updated
-
----
-
 ## 📄 License
 
 This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
@@ -969,10 +942,7 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 
 - GitHub: [@DininduAkalanka](https://github.com/DininduAkalanka)
 - Repository: [UniMate-AI-Powered-University-Companion-V1](https://github.com/DininduAkalanka/UniMate-AI-Powered-University-Companion-V1)
-- Branch: CourseFix
-
 ---
-
 ## 🙏 Acknowledgments
 
 - **Hugging Face** for free AI inference API
@@ -983,72 +953,4 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 
 ---
 
-## 📞 Support
 
-For issues, questions, or suggestions:
-
-- **GitHub Issues**: [Create an issue](https://github.com/DininduAkalanka/UniMate-AI-Powered-University-Companion-V1/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/DininduAkalanka/UniMate-AI-Powered-University-Companion-V1/discussions)
-
----
-
-## 🗺️ Roadmap
-
-### **Phase 1: Core Features** ✅
-- [x] Task management
-- [x] Course management
-- [x] Study session tracking
-- [x] AI chat assistant
-- [x] Deadline predictions
-- [x] Smart notifications
-
-### **Phase 2: Advanced AI** 🚧
-- [x] RAG implementation
-- [x] Burnout detection
-- [x] Peak time analysis
-- [ ] Personalized study plans
-- [ ] Collaborative features
-- [ ] Gamification
-
-### **Phase 3: Enterprise Features** 📋
-- [ ] University integrations
-- [ ] LMS synchronization
-- [ ] Professor dashboard
-- [ ] Analytics dashboard
-- [ ] Mobile + Web platform
-- [ ] Premium subscription
-
----
-
-## 📊 Tech Highlights
-
-### **Performance Metrics**
-- ⚡ App startup: < 2 seconds
-- 🎯 60 FPS animations (Reanimated)
-- 📦 Bundle size: ~25 MB
-- 🔋 Low battery consumption
-- 📡 Offline-first architecture
-
-### **Code Quality**
-- 📝 100% TypeScript coverage
-- 🔍 ESLint compliance
-- 🧩 Modular architecture
-- 📚 Comprehensive comments
-- 🎨 Design system consistency
-
-### **AI/ML Stats**
-- 🤖 3 AI models integrated
-- 📊 5 ML algorithms implemented
-- 🔢 384-dimensional embeddings
-- 💾 1000-item vector store capacity
-- ⚡ < 2s average response time
-
----
-
-<div align="center">
-
-**Built with ❤️ for students, by a student**
-
-⭐ Star this repo if you find it helpful!
-
-</div>
