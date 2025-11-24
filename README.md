@@ -2,7 +2,8 @@
 
 <div align="center">
 
-![UniMate Logo](./assets/images/icon.png)
+
+<img width="2800" height="2100" alt="iphone-multiple-screens-mockup" src="https://github.com/user-attachments/assets/52713bb7-fc2c-4ecf-bafc-28b407c3fdcd" />
 
 **Your Intelligent Study Partner for Academic Success**
 
