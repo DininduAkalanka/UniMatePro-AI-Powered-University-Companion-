@@ -714,16 +714,6 @@ The application implements an offline-first strategy:
 - Fallback responses for AI features when network unavailable
 - Local vector store for RAG functionality without internet
 
-### Offline Support
-
-The application implements an offline-first strategy:
-
-- Firestore offline persistence for automatic local caching
-- AsyncStorage for critical user data
-- Queued operations that synchronize when connectivity returns
-- Fallback responses for AI features when network unavailable
-- Local vector store for RAG functionality without internet
-
 ---
 
 ## API Integrations
