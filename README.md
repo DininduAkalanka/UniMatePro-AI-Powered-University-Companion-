@@ -2,10 +2,9 @@
 
 <div align="center">
 
-
 <img width="2800" height="2100" alt="iphone-multiple-screens-mockup" src="https://github.com/user-attachments/assets/52713bb7-fc2c-4ecf-bafc-28b407c3fdcd" />
 
-**Your Intelligent Study Partner for Academic Success**
+**Intelligent Academic Management System for University Students**
 
 [![React Native](https://img.shields.io/badge/React%20Native-0.81.5-blue.svg)](https://reactnative.dev/)
 [![Expo](https://img.shields.io/badge/Expo-~54.0-000020.svg)](https://expo.dev/)
@@ -13,390 +12,707 @@
 [![Firebase](https://img.shields.io/badge/Firebase-12.5-orange.svg)](https://firebase.google.com/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
-[Features](#-features) • [Tech Stack](#-tech-stack) • [Installation](#-installation) • [AI/ML Features](#-aiml-capabilities) • [Architecture](#-architecture)
+[Overview](#overview) • [Problem Statement](#problem-statement) • [Solution](#solution) • [Features](#features) • [Tech Stack](#tech-stack) • [Installation](#installation)
 
 </div>
 
 ---
 
-## 📋 Table of Contents
+## Table of Contents
 
-- [Overview](#-overview)
-- [Key Features](#-features)
-- [Tech Stack](#-tech-stack)
-- [AI/ML Capabilities](#-aiml-capabilities)
-- [Installation](#-installation)
-- [Project Structure](#-project-structure)
-- [Architecture](#-architecture)
-- [Firebase Setup](#-firebase-setup)
-- [Environment Variables](#-environment-variables)
-- [Available Scripts](#-available-scripts)
-- [API Integrations](#-api-integrations)
-- [Contributing](#-contributing)
-- [License](#-license)
-
----
-
-## 🎯 Overview
-
-**UniMate** is a cutting-edge AI-powered mobile application designed specifically for university students to optimize their academic performance. Built with React Native and Expo, it combines intelligent task management, predictive analytics, and personalized AI assistance to help students stay on track, avoid burnout, and achieve their academic goals.
-
-### Why UniMate?
-
-- 🎓 **Smart Academic Management**: Automated deadline tracking, task prioritization, and course organization
-- 🤖 **AI-Powered Assistance**: Context-aware chat with RAG (Retrieval Augmented Generation) capabilities
-- 📊 **Predictive Analytics**: ML-based deadline risk prediction and workload analysis
-- 🔔 **Intelligent Notifications**: Proactive alerts based on study patterns and peak productivity times
-- 🧠 **Burnout Prevention**: Advanced algorithms to detect and prevent academic exhaustion
-- 📱 **Native Performance**: Optimized for iOS and Android with modern React Native architecture
+- [Overview](#overview)
+- [Problem Statement](#problem-statement)
+- [Solution](#solution)
+- [Key Features](#key-features)
+- [AI/ML Capabilities](#aiml-capabilities)
+- [Technology Stack](#technology-stack)
+- [Installation](#installation)
+- [Project Structure](#project-structure)
+- [Architecture](#architecture)
+- [API Integrations](#api-integrations)
+- [Configuration](#configuration)
+- [Available Scripts](#available-scripts)
+- [Contributing](#contributing)
+- [License](#license)
 
 ---
 
-## ✨ Features
+## Overview
 
-### 🎯 Core Features
+UniMate is a cross-platform mobile application designed to address the academic workload challenges faced by university students. The application combines traditional task management with artificial intelligence and machine learning capabilities to provide predictive insights, personalized recommendations, and automated assistance for academic planning and execution.
 
-#### 📚 **Course Management**
-- Create and organize university courses with custom colors
-- Track course difficulty levels (1-5 scale)
-- Store instructor information and credit hours
-- Visual course cards with gradient designs
+Built using React Native and Expo framework, UniMate delivers native performance across iOS and Android platforms while maintaining a single codebase. The application integrates Firebase for backend services and leverages Hugging Face's machine learning models to provide intelligent features that adapt to individual student behavior patterns.
 
-#### ✅ **Task Management**
-- Comprehensive task tracking (assignments, exams, projects, quizzes)
-- Priority-based organization (Low, Medium, High, Urgent)
-- Automatic status tracking (Todo, In Progress, Completed, Overdue)
-- Time estimation and progress tracking
-- Due date reminders with smart notifications
+---
 
-#### 📅 **Timetable Scheduling**
-- Weekly schedule management
-- Class location and type tracking (lecture, lab, tutorial)
-- Visual calendar interface with course color coding
-- Day-wise organized view
+## Problem Statement
 
-#### 🧠 **Study Session Tracking**
-- Timer-based study sessions with Pomodoro support
-- Self-rated effectiveness scoring (1-5)
-- Session notes and topic tracking
-- Historical data for analytics
+University students face several interconnected challenges that impact their academic performance and well-being:
 
-#### 📊 **Analytics Dashboard**
+### Academic Workload Management
+- Multiple courses with overlapping deadlines create scheduling conflicts and time management difficulties
+- Lack of visibility into upcoming workload distribution leads to last-minute cramming and poor time allocation
+- Difficulty prioritizing tasks across different courses based on actual time requirements and complexity
+- Inadequate tools for tracking progress across assignments, exams, projects, and study sessions
+
+### Student Burnout and Mental Health
+- Excessive study hours without proper break management contributes to academic burnout
+- Declining study effectiveness goes unnoticed until academic performance suffers
+- Students lack objective measures to assess their productivity patterns and workload capacity
+- Absence of early warning systems to identify unsustainable work patterns before they cause problems
+
+### Information Fragmentation
+- Study materials, notes, and resources are scattered across multiple platforms and formats
+- Difficulty retrieving relevant information when needed for assignments or exam preparation
+- No centralized system to organize course materials, deadlines, and study resources
+- Limited ability to search across personal academic content effectively
+
+### Reactive Rather Than Proactive Approach
+- Students typically respond to immediate deadlines rather than planning ahead strategically
+- Lack of predictive insights about future workload and potential scheduling conflicts
+- Manual tracking of courses, tasks, and study sessions is time-consuming and error-prone
+- Absence of personalized recommendations based on individual performance patterns
+
+---
+
+## Solution
+
+UniMate addresses these challenges through an integrated platform that combines traditional productivity tools with artificial intelligence capabilities:
+
+### Intelligent Task and Course Management
+The application provides a comprehensive system for organizing academic responsibilities. Students can track courses with detailed metadata including difficulty levels, credit hours, and instructor information. Tasks are automatically categorized by type (assignments, exams, projects, quizzes) with priority-based organization and status tracking. The integrated timetable system manages weekly schedules with location tracking and visual course identification.
+
+### Predictive Analytics Engine
+Machine learning algorithms analyze task data, historical performance, and current workload to generate predictive insights. The system calculates deadline risk scores based on remaining time, estimated effort, and completion status. It provides recommended daily study hours to meet deadlines without overloading. The workload analyzer identifies potential capacity issues before they become critical problems.
+
+### Burnout Detection and Prevention
+A multi-factor analysis system monitors study patterns to identify early signs of burnout. The algorithm tracks study session effectiveness trends, excessive study hours, completion rates, break patterns, and overdue task accumulation. When risk thresholds are exceeded, the system generates personalized recommendations and intervention alerts to help students adjust their approach before burnout occurs.
+
+### Retrieval-Augmented Generation (RAG) System
+The application implements a RAG architecture that indexes personal study materials, task descriptions, course content, and session notes. Using vector embeddings and semantic search, students can query their accumulated knowledge base in natural language. The system retrieves relevant context and combines it with large language models to provide personalized answers based on the student's own materials.
+
+### Peak Productivity Analysis
+By analyzing historical study session data, the system identifies each student's most productive hours. This analysis considers session count, average effectiveness ratings, duration patterns, and consistency. The insights inform optimal scheduling for notifications and task recommendations, ensuring alerts reach students when they are most likely to be productive.
+
+### Context-Aware AI Assistant
+An integrated conversational AI system provides on-demand assistance for concept explanations, study strategies, and question answering. The assistant operates in two modes: standard AI mode for general queries using large language models, and RAG mode for questions specific to the student's courses and materials. The system maintains conversation context and adapts responses based on the student's academic profile.
+
+### Smart Notification Framework
+Rather than generic deadline reminders, the notification system uses multiple data sources to determine optimal timing and content. Notifications are triggered based on deadline proximity, task priority, predicted risk levels, and the student's peak productivity hours. The aggregation system prevents notification spam while ensuring critical alerts are delivered. Background processing ensures notifications function reliably even when the app is not active.
+
+---
+
+## Key Features
+
+### Core Academic Management
+
+**Course Organization**
+- Create and manage unlimited university courses with custom visual identifiers
+- Track difficulty ratings on a five-point scale for workload planning
+- Store instructor contact information and office hours
+- Record credit hours for workload calculation
+- Visual course cards with gradient designs for quick identification
+
+**Comprehensive Task Tracking**
+- Support for multiple task types: assignments, exams, projects, quizzes
+- Four-level priority system: low, medium, high, urgent
+- Automatic status progression: todo, in progress, completed, overdue
+- Time estimation fields for realistic scheduling
+- Progress tracking with completion percentages
+- Due date management with timezone support
+- Task notes and description fields for detailed requirements
+
+**Timetable Management**
+- Week-view schedule with day-wise organization
+- Class type categorization: lecture, laboratory, tutorial, seminar
+- Location tracking for on-campus navigation
+- Time slot management with conflict detection
+- Course integration with color-coded visualization
+- Recurring event support for semester-long classes
+
+**Study Session Tracking**
+- Timer-based session recording with start/stop functionality
+- Effectiveness self-assessment on a five-point scale
+- Topic and subject tracking for performance analysis
+- Session notes for recording key learnings
+- Historical data storage for trend analysis
+- Pomodoro timer support with customizable intervals
+
+**Analytics Dashboard**
 - Real-time statistics on tasks, courses, and study hours
-- Completion percentage tracking
-- Study streak monitoring
+- Completion rate calculations across all active tasks
+- Study streak tracking for motivation
 - Visual progress indicators with animated components
-
-### 🤖 AI/ML-Powered Features
-
-#### 💬 **Intelligent AI Chat Assistant**
-- **Dual Mode Operation**:
-  - **Standard AI Mode**: General study assistance using Hugging Face models
-  - **RAG Mode**: Context-aware responses using your personal study data
-- Natural language understanding for:
-  - Concept explanations
-  - Study tips and strategies
-  - Question answering
-  - Text summarization
-- Real-time typing indicators and animations
-- Conversation history management
-- Intent detection (summarize, explain, study tips, Q&A)
-
-#### 🔍 **RAG (Retrieval Augmented Generation)**
-- Semantic search across personal study materials
-- Vector embeddings using sentence-transformers (384D)
-- Local vector storage with AsyncStorage
-- Content indexing for:
-  - Study notes
-  - Task descriptions
-  - Course materials
-  - Chat history
-- Cosine similarity-based retrieval
-- Automatic fallback for offline mode
-
-#### 📈 **Predictive Analytics Engine**
-- **Deadline Risk Prediction**:
-  - ML-based risk scoring (Low, Medium, High)
-  - Calculates recommended study hours per day
-  - Days-to-completion analysis
-  - Completion probability estimation
-- **Workload Analysis**:
-  - Daily workload distribution
-  - Capacity vs. demand analysis
-  - Overload detection and prevention
-
-#### 🔥 **Burnout Detection System**
-- Multi-factor analysis:
-  - Declining effectiveness trends
-  - Excessive study hours detection
-  - Task completion rate monitoring
-  - Break pattern analysis
-  - Overdue task accumulation
-- Risk scoring (0-100 scale)
-- Personalized recommendations
-- Intervention triggers for critical cases
-
-#### ⏰ **Peak Time Analyzer**
-- Identifies user's most productive hours (0-23)
-- Hourly productivity scoring based on:
-  - Session count
-  - Average effectiveness
-  - Duration patterns
-- Confidence levels (Low, Medium, High)
-- Optimal reminder timing recommendations
-
-#### 🔔 **Smart Notification System**
-- **Context-Aware Triggers**:
-  - Critical deadline alerts (< 2 days)
-  - High-priority warnings (3-5 days)
-  - Medium-priority reminders
-  - Weekly upcoming task notifications
-- **Notification Aggregation**: Prevents notification spam
-- **Rate Limiting**: Fair usage enforcement
-- **Priority-Based Delivery**:
-  - Critical: Urgent sound + vibration
-  - High: Alert sound
-  - Medium/Low: Subtle notifications
-- **Background Processing**: Uses Expo BackgroundFetch and TaskManager
+- Weekly and monthly aggregation views
+- Performance trend visualizations
 
 ---
 
-## 🛠️ Tech Stack
+## AI/ML Capabilities
 
-### **Frontend Framework**
-| Technology | Version | Purpose |
-|------------|---------|---------|
-| **React Native** | 0.81.5 | Cross-platform mobile framework |
-| **Expo** | ~54.0.23 | Development platform and tooling |
-| **TypeScript** | 5.9.2 | Type-safe development |
-| **Expo Router** | ~6.0.14 | File-based navigation |
+### Conversational AI Assistant
 
-### **State Management & UI**
-| Technology | Purpose |
-|------------|---------|
-| **React Hooks** | State management (useState, useEffect, useCallback) |
-| **Context API** | Global state (StudySessionContext) |
-| **Moti** | Declarative animations |
-| **React Native Reanimated** | High-performance animations |
-| **Expo Linear Gradient** | Visual effects |
-| **Expo Blur** | iOS-style blur effects |
+The application includes a dual-mode AI assistant that adapts to different user needs:
 
-### **Backend & Database**
-| Technology | Version | Purpose |
-|------------|---------|---------|
-| **Firebase** | 12.5.0 | Backend as a Service (BaaS) |
-| **Firestore** | - | NoSQL cloud database |
-| **Firebase Auth** | - | Authentication system |
-| **Firebase Storage** | - | File storage |
-| **Firebase Functions** | - | Serverless backend |
+**Standard AI Mode**
+- General academic assistance using large language models
+- Concept explanations across multiple subjects
+- Study strategy recommendations based on learning science principles
+- Question answering with citations when applicable
+- Text summarization for lengthy materials
 
-### **AI/ML Services**
-| Technology | Version | Purpose |
-|------------|---------|---------|
-| **Hugging Face Inference** | 4.13.3 | AI model API |
-| **sentence-transformers** | all-MiniLM-L6-v2 | Vector embeddings (384D) |
-| **Meta Llama** | 3.2-1B-Instruct | Conversational AI |
-| **BART** | facebook/bart-large-cnn | Text summarization |
+**RAG-Enhanced Mode**
+- Context-aware responses using the student's personal study materials
+- Semantic search across indexed content including notes, tasks, and course materials
+- Personalized answers that reference specific assignments and deadlines
+- Integration with student's academic history for contextual recommendations
 
-### **Native Features**
-| Technology | Purpose |
-|------------|---------|
-| **Expo Notifications** | Local & push notifications |
-| **Expo Background Fetch** | Background task execution |
-| **Expo Task Manager** | Scheduled background tasks |
-| **Expo Haptics** | Tactile feedback |
-| **AsyncStorage** | Local persistent storage |
-| **Expo Auth Session** | OAuth integration |
-| **Google Sign-In** | Social authentication |
+**Technical Implementation**
+- Primary model: Meta Llama 3.2-1B-Instruct for conversational responses
+- Fallback models: Zephyr-7B-Beta and DialoGPT-Medium for high availability
+- Summarization: Facebook BART-Large-CNN for condensing lengthy content
+- Context window: 6-message history for conversation continuity
+- Temperature control: 0.7 for balanced creativity and accuracy
+- Token limiting: 500 maximum for mobile optimization
+- Real-time typing indicators with animated feedback
+- Automatic offline mode with intelligent fallback responses
 
-### **Developer Tools**
-| Tool | Purpose |
-|------|---------|
-| **ESLint** | Code linting |
-| **Prettier** | Code formatting |
-| **TypeScript** | Static type checking |
-| **React Native Debugger** | Debugging |
+### Retrieval-Augmented Generation System
+
+**Architecture Overview**
+
+The RAG system implements a complete pipeline from content ingestion to context-aware response generation:
+
+1. Content Collection: Study notes, task descriptions, course materials, session notes, and chat history
+2. Tokenization: Text preprocessing and cleaning
+3. Embedding Generation: Conversion to 384-dimensional vectors using sentence-transformers
+4. Vector Storage: Local persistence using AsyncStorage with JSON serialization
+5. Similarity Search: Cosine similarity calculation for relevant document retrieval
+6. Context Injection: Retrieved documents combined with user query
+7. LLM Processing: Large language model generates response using augmented context
+
+**Embedding Strategy**
+- Model: sentence-transformers/all-MiniLM-L6-v2
+- Dimensionality: 384D vectors
+- Normalization: L2 norm for unit vector representation
+- Offline fallback: TF-IDF-style hashing for degraded mode operation
+
+**Vector Storage Architecture**
+- Backend: AsyncStorage for local persistence
+- Format: JSON serialization for cross-platform compatibility
+- Capacity: 1,000 items with FIFO eviction policy
+- Indexing: On-demand with timestamp tracking for freshness
+- Performance: Sub-second retrieval for most queries
+
+**Similarity Calculation**
+
+```
+Cosine Similarity = dot(query_vector, document_vector) / (||query_vector|| × ||document_vector||)
+```
+
+Documents are ranked by similarity score, with top-k results selected for context injection.
+
+### Deadline Risk Prediction Engine
+
+**Risk Assessment Algorithm**
+
+The prediction engine analyzes multiple factors to calculate deadline risk:
+
+- Days remaining until deadline
+- Estimated hours required for completion
+- Current completion percentage
+- Historical average study hours per day
+- Task priority level
+- Concurrent deadline proximity
+
+**Risk Classification**
+
+- High Risk: Required daily hours exceed 10 hours (maximum sustainable study time)
+- Medium Risk: Required daily hours between 7-10 hours (70-100% of maximum)
+- Low Risk: Required daily hours below 7 hours (sustainable workload)
+
+**Predictive Metrics**
+
+- Recommended study hours per day for on-time completion
+- Completion probability percentage based on historical performance
+- Days remaining calculation accounting for weekends and holidays
+- Historical performance weighting for personalized recommendations
+
+### Burnout Detection System
+
+**Multi-Factor Analysis Model**
+
+The burnout detection algorithm combines five weighted indicators:
+
+```
+Burnout Score = (effectiveness_decline × 0.30) + 
+                (excessive_hours × 0.25) + 
+                (completion_decline × 0.20) + 
+                (insufficient_breaks × 0.15) + 
+                (overdue_accumulation × 0.10)
+```
+
+**Monitored Indicators**
+
+| Indicator | Threshold | Weight | Description |
+|-----------|-----------|--------|-------------|
+| Effectiveness Decline | < 2.5/5 or -40% drop | 30% | Declining self-reported session effectiveness |
+| Excessive Hours | > 50 hours/week | 25% | Unsustainable study duration |
+| Completion Decline | < 50% rate | 20% | Reduced task completion percentage |
+| Insufficient Breaks | < 1 day off/week | 15% | Inadequate recovery time |
+| Overdue Accumulation | > 3 tasks | 10% | Growing backlog of overdue items |
+
+**Risk Level Classifications**
+
+- Critical (80-100): Immediate intervention recommended with specific recovery strategies
+- High (60-79): Weekly check-in suggested with workload adjustment recommendations
+- Moderate (40-59): Close monitoring with proactive break scheduling
+- Low (20-39): Early warning with preventive suggestions
+- None (0-19): Healthy patterns with positive reinforcement
+
+### Peak Productivity Time Analyzer
+
+**Productivity Scoring Formula**
+
+```
+Hourly Productivity Score = (session_count × 0.40) + 
+                           (avg_effectiveness × 0.30) + 
+                           (avg_duration × 0.20) + 
+                           (consistency × 0.10)
+```
+
+**Analysis Parameters**
+
+- Historical window: 30-day rolling period
+- Minimum session requirement: 5 sessions for statistical significance
+- Hourly granularity: 24-hour coverage (0-23)
+- Confidence levels:
+  - High confidence: > 20 sessions recorded
+  - Medium confidence: 10-20 sessions
+  - Low confidence: < 10 sessions
+
+**Applications**
+
+- Optimal notification scheduling based on high-productivity hours
+- Study session recommendations for difficult tasks
+- Calendar blocking suggestions for focused work
+- Trend analysis for circadian rhythm optimization
+
+### Smart Notification Framework
+
+**Decision Tree Architecture**
+
+```
+Task Data → Risk Analysis → Time Optimization → Priority Calculation → Trigger Decision → Delivery
+```
+
+**Notification Categories**
+
+- Deadline Alerts: Risk-based scheduling with urgency escalation
+- Workload Warnings: Capacity overflow detection with load balancing suggestions
+- Peak Time Reminders: Productivity-optimized timing based on historical patterns
+- Burnout Interventions: Health-focused alerts with recovery recommendations
+- Achievement Celebrations: Motivational triggers for milestone completion
+
+**Scheduling Logic**
+
+- Background fetch interval: Every 4 hours for passive monitoring
+- Morning briefing: Daily summary at user's identified peak time
+- Real-time triggers: Immediate notifications on critical task creation or updates
+- Aggregation window: 15-minute deduplication period to prevent notification spam
+
+**Priority-Based Delivery**
+
+- Critical priority: Urgent sound, vibration, and banner display
+- High priority: Alert sound with persistent banner
+- Medium priority: Subtle sound with collapsible notification
+- Low priority: Silent delivery to notification center only
+
+**Background Processing**
+
+- Expo BackgroundFetch for periodic checks
+- TaskManager for scheduled operations
+- Persistent state management for offline reliability
+- Battery-optimized polling strategies
 
 ---
 
-## 🧠 AI/ML Capabilities
+## Technology Stack
 
-### 1. **Conversational AI System**
+### Frontend Architecture
 
-#### **Architecture**
-```
-User Input → Intent Detection → Model Selection → Response Generation → Context Update
-```
+**React Native 0.81.5**
+- Cross-platform mobile framework enabling single codebase for iOS and Android
+- Bridge-based architecture with new Fabric renderer for improved performance
+- Hermes JavaScript engine for optimized bytecode execution and reduced app startup time
+- Platform support: iOS 13+, Android 6.0+ (API Level 23+)
 
-#### **Models Used**
-- **Primary**: `meta-llama/Llama-3.2-1B-Instruct` (Conversational)
-- **Fallback**: `HuggingFaceH4/zephyr-7b-beta`, `microsoft/DialoGPT-medium`
-- **Summarization**: `facebook/bart-large-cnn`
+**Expo SDK 54.0.23**
+- Development platform with managed workflow for simplified native module integration
+- EAS Build system for cloud-based compilation and deployment
+- Over-the-air updates capability for instant bug fixes and feature deployments
+- Metro bundler with Fast Refresh for rapid development iteration
 
-#### **Features**
-- Context-aware conversations (6-message history)
-- System prompt engineering for student-specific responses
-- Temperature control (0.7) for balanced creativity
-- Token limiting (500 max) for mobile optimization
-- Automatic model fallback on failure
-- Offline mode with intelligent fallbacks
+**TypeScript 5.9.2**
+- Static type checking with strict mode enabled for error prevention
+- Enhanced IDE support with full IntelliSense across all dependencies
+- Path aliases for cleaner import statements
+- ES2022 compilation target for modern JavaScript features
 
-#### **Rate Limiting**
-- Per-user request throttling
-- Retry-after calculations
-- Fair usage enforcement
+### Navigation and Routing
 
-### 2. **RAG (Retrieval Augmented Generation) System**
+**Expo Router 6.0.14**
+- File-system based routing architecture similar to Next.js
+- Type-safe route definitions with typed navigation parameters
+- Support for stack, tab, and drawer navigation patterns
+- Automatic deep linking generation from directory structure
+- Route-based code splitting for optimal bundle size and lazy loading
 
-#### **Pipeline**
-```
-Content → Tokenization → Embedding (384D) → Vector Store → Similarity Search → Context Injection → LLM → Response
-```
+### State Management and UI
 
-#### **Embedding Strategy**
-- **Model**: `sentence-transformers/all-MiniLM-L6-v2`
-- **Dimensions**: 384
-- **Normalization**: L2 norm (unit vectors)
-- **Fallback**: TF-IDF-like hashing for offline mode
+**React Hooks and Context API**
+- useState and useReducer for local component state
+- useEffect and useCallback for side effects and memoization
+- Context API for global state management (StudySessionContext)
+- Custom hooks for reusable stateful logic
 
-#### **Vector Storage**
-- **Backend**: AsyncStorage (local)
-- **Format**: JSON serialization
-- **Capacity**: 1000 items (FIFO)
-- **Indexing**: On-demand with timestamp tracking
+**Animation Libraries**
+- Moti: Declarative animations with simple API for common motion patterns
+- React Native Reanimated: High-performance animations running on UI thread
+- Expo Linear Gradient: Visual effects for cards and backgrounds
+- Expo Blur: iOS-style blur effects for glass morphism design
 
-#### **Search Algorithm**
-```typescript
-Similarity Score = Cosine Similarity = dot(query_vec, doc_vec) / (||query_vec|| × ||doc_vec||)
-```
+### Backend Infrastructure
 
-#### **Context Types**
-- Study notes
-- Task descriptions
-- Course materials
-- Study session notes
-- Chat history
+**Firebase 12.5.0**
 
-### 3. **Deadline Risk Prediction Engine**
+Backend-as-a-Service providing multiple integrated services:
 
-#### **Algorithm**
-```typescript
-Risk Score = f(
-  daysRemaining,
-  remainingHours,
-  completionPercentage,
-  historicalAverage,
-  taskPriority
-)
-```
+- **Firestore**: NoSQL cloud database with real-time synchronization
+  - Document-based data model for flexible schema
+  - Real-time listeners for live updates across devices
+  - Offline persistence with automatic synchronization
+  - Batch writes and transactions for data consistency
+  
+- **Firebase Authentication**: Secure user authentication system
+  - Email/password authentication
+  - Google OAuth 2.0 integration
+  - Password reset functionality via email
+  - Session management with persistent login state
+  
+- **Firebase Storage**: Cloud file storage for user-uploaded content
+  - Secure file uploads with progress tracking
+  - Automatic resizing and optimization for images
+  - Access control with security rules
 
-#### **Risk Levels**
-- **High**: `hoursPerDay > maxStudyHours` (10h/day)
-- **Medium**: `hoursPerDay > 70% of maxStudyHours`
-- **Low**: `hoursPerDay ≤ 70% of maxStudyHours`
+### AI and Machine Learning Services
 
-#### **Predictive Metrics**
-- Recommended hours per day
-- Completion probability (0-100%)
-- Days remaining calculation
-- Historical performance weighting
+**Hugging Face Inference API 4.13.3**
 
-### 4. **Burnout Detection Algorithm**
+Integration with multiple state-of-the-art models:
 
-#### **Multi-Factor Analysis**
-```typescript
-Burnout Score = weighted_sum([
-  effectiveness_drop × 30%,
-  excessive_hours × 25%,
-  completion_decline × 20%,
-  insufficient_breaks × 15%,
-  overdue_accumulation × 10%
-])
-```
+- **Meta Llama 3.2-1B-Instruct**: Primary conversational AI model
+  - 1 billion parameter instruction-tuned model
+  - Optimized for mobile with acceptable latency
+  - Context-aware conversation handling
+  
+- **Facebook BART-Large-CNN**: Text summarization
+  - 400 million parameter encoder-decoder architecture
+  - Trained specifically for abstractive summarization
+  - Condensed summaries of study materials
+  
+- **sentence-transformers/all-MiniLM-L6-v2**: Semantic embeddings
+  - 384-dimensional dense vector representations
+  - Optimized for semantic similarity tasks
+  - Efficient inference for mobile deployment
 
-#### **Indicators Tracked**
-| Indicator | Threshold | Weight |
-|-----------|-----------|--------|
-| Effectiveness Drop | < 2.5/5 or -40% decline | 30% |
-| Excessive Hours | > 50h/week | 25% |
-| Completion Decline | < 50% | 20% |
-| No Breaks | < 1 day off/week | 15% |
-| Overdue Tasks | > 3 tasks | 10% |
+### Native Platform Integration
 
-#### **Risk Levels**
-- **Critical**: 80-100 (Immediate intervention)
-- **High**: 60-79 (Weekly check-in recommended)
-- **Moderate**: 40-59 (Monitor closely)
-- **Low**: 20-39 (Early warning)
-- **None**: 0-19 (Healthy patterns)
+**Expo Modules**
 
-### 5. **Peak Time Analyzer**
+- **expo-notifications (0.30.6)**: Local and push notification management
+- **expo-background-fetch (14.0.1)**: Periodic background task execution
+- **expo-task-manager (12.0.1)**: Scheduled background operations
+- **expo-haptics (15.0.7)**: Tactile feedback for user interactions
+- **expo-auth-session (7.0.9)**: OAuth flow management
+- **expo-clipboard (8.0.7)**: Clipboard access for copy/paste functionality
+- **expo-document-picker (14.0.7)**: File selection from device storage
 
-#### **Productivity Score Formula**
-```typescript
-Productivity Score = (
-  sessionCount × 40% +
-  avgEffectiveness × 30% +
-  avgDuration × 20% +
-  consistency × 10%
-) × 100
-```
+**React Native Community Packages**
 
-#### **Analysis Window**
-- **Historical Data**: 30 days
-- **Minimum Sessions**: 5
-- **Hourly Granularity**: 0-23 hours
-- **Confidence Levels**:
-  - High: > 20 sessions
-  - Medium: 10-20 sessions
-  - Low: < 10 sessions
+- **@react-native-async-storage/async-storage (2.2.0)**: Local persistent storage
+- **@react-native-google-signin/google-signin (16.0.0)**: Google authentication
+- **@react-native-picker/picker (2.11.1)**: Native picker components
+- **@react-native-community/datetimepicker (8.4.4)**: Date and time selection
 
-### 6. **Smart Notification Triggers**
+**Additional UI Libraries**
 
-#### **Decision Tree**
-```
-Task Data → Risk Analysis → Time Optimization → Priority Calculation → Trigger Decision
-```
+- **react-native-calendars (1.1313.0)**: Calendar and scheduling components
+- **react-native-gifted-chat (2.8.1)**: Chat UI components
+- **react-native-gesture-handler (2.28.0)**: Touch gesture management
+- **react-native-keyboard-controller (1.18.5)**: Keyboard behavior customization
 
-#### **Notification Types**
-- **Deadline Alerts**: Risk-based scheduling
-- **Workload Warnings**: Capacity overflow detection
-- **Peak Time Reminders**: Productivity-optimized timing
-- **Burnout Interventions**: Health-focused alerts
-- **Achievement Celebrations**: Motivational triggers
+### Development Tools
 
-#### **Scheduling Logic**
-- **Background Fetch**: Every 4 hours
-- **Morning Briefing**: Daily at user's peak time
-- **Real-time**: On task creation/update
-- **Aggregation**: Deduplicate within 15-minute windows
+**Code Quality**
+- ESLint: JavaScript and TypeScript linting with Expo configuration
+- TypeScript compiler: Static type checking during development
+- Prettier: Code formatting for consistency
+
+**Build and Deployment**
+- EAS Build: Cloud-based native binary compilation
+- Expo Updates: Over-the-air update distribution
+- Metro bundler: JavaScript bundling and transformation
 
 ---
 
-## 🚀 Installation
+## Installation
 
-### **Prerequisites**
-- Node.js (v18 or higher)
-- npm or yarn
-- Expo CLI (`npm install -g expo-cli`)
-- iOS Simulator (Mac only) or Android Emulator
-- Firebase account
-- Hugging Face account (free tier)
+### Prerequisites
 
-### **Step 1: Clone Repository**
+Before installing UniMate, ensure the following software is installed on your development machine:
+
+- Node.js version 18 or higher
+- npm (included with Node.js) or yarn package manager
+- Expo CLI: Install globally using `npm install -g expo-cli`
+- iOS Simulator (macOS only) or Android Emulator
+- Firebase account (free tier available)
+- Hugging Face account (free tier provides API access)
+
+### Step 1: Clone Repository
+
 ```bash
 git clone https://github.com/DininduAkalanka/UniMate-AI-Powered-University-Companion-V1.git
 cd unimatemobile
 ```
 
-### **Step 2: Install Dependencies**
+### Step 2: Install Dependencies
+
 ```bash
 npm install
 ```
 
-### **Step 3: Configure Environment Variables**
+This command installs all required packages defined in package.json, including React Native, Expo modules, Firebase SDK, and AI/ML libraries.
 
-Create an `app.config.js` file in the root directory:
+### Step 3: Firebase Configuration
+
+1. Create a new Firebase project at https://console.firebase.google.com
+2. Enable Firestore Database in production mode
+3. Enable Authentication with Email/Password and Google sign-in methods
+4. Generate web app credentials from Project Settings
+5. Note the following configuration values:
+   - API Key
+   - Auth Domain
+   - Project ID
+   - Storage Bucket
+   - Messaging Sender ID
+   - App ID
+
+### Step 4: Hugging Face API Configuration
+
+1. Create account at https://huggingface.co
+2. Navigate to Settings > Access Tokens
+3. Generate new token with read permissions
+4. Copy token starting with "hf_"
+
+### Step 5: Environment Configuration
+
+Create `app.config.js` file in root directory:
+
+```javascript
+export default {
+  expo: {
+    name: "UniMate",
+    slug: "unimatemobile",
+    version: "1.0.0",
+    orientation: "portrait",
+    icon: "./assets/icon.png",
+    userInterfaceStyle: "automatic",
+    splash: {
+      image: "./assets/splash.png",
+      resizeMode: "contain",
+      backgroundColor: "#ffffff"
+    },
+    extra: {
+      EXPO_PUBLIC_FIREBASE_API_KEY: process.env.EXPO_PUBLIC_FIREBASE_API_KEY,
+      EXPO_PUBLIC_FIREBASE_AUTH_DOMAIN: process.env.EXPO_PUBLIC_FIREBASE_AUTH_DOMAIN,
+      EXPO_PUBLIC_FIREBASE_PROJECT_ID: process.env.EXPO_PUBLIC_FIREBASE_PROJECT_ID,
+      EXPO_PUBLIC_FIREBASE_STORAGE_BUCKET: process.env.EXPO_PUBLIC_FIREBASE_STORAGE_BUCKET,
+      EXPO_PUBLIC_FIREBASE_MESSAGING_SENDER_ID: process.env.EXPO_PUBLIC_FIREBASE_MESSAGING_SENDER_ID,
+      EXPO_PUBLIC_FIREBASE_APP_ID: process.env.EXPO_PUBLIC_FIREBASE_APP_ID,
+      EXPO_PUBLIC_HUGGING_FACE_API_KEY: process.env.EXPO_PUBLIC_HUGGING_FACE_API_KEY
+    },
+    ios: {
+      supportsTablet: true,
+      bundleIdentifier: "com.yourcompany.unimatemobile"
+    },
+    android: {
+      adaptiveIcon: {
+        foregroundImage: "./assets/adaptive-icon.png",
+        backgroundColor: "#ffffff"
+      },
+      package: "com.yourcompany.unimatemobile"
+    },
+    web: {
+      favicon: "./assets/favicon.png"
+    }
+  }
+};
+```
+
+Create `.env` file in root directory:
+
+```
+EXPO_PUBLIC_FIREBASE_API_KEY=your_firebase_api_key
+EXPO_PUBLIC_FIREBASE_AUTH_DOMAIN=your_project.firebaseapp.com
+EXPO_PUBLIC_FIREBASE_PROJECT_ID=your_project_id
+EXPO_PUBLIC_FIREBASE_STORAGE_BUCKET=your_project.appspot.com
+EXPO_PUBLIC_FIREBASE_MESSAGING_SENDER_ID=your_sender_id
+EXPO_PUBLIC_FIREBASE_APP_ID=your_app_id
+EXPO_PUBLIC_HUGGING_FACE_API_KEY=hf_your_token
+```
+
+### Step 6: Start Development Server
+
+```bash
+npm start
+```
+
+This launches the Expo development server. Use the following commands:
+
+- Press `i` to open iOS Simulator (macOS only)
+- Press `a` to open Android Emulator
+- Scan QR code with Expo Go app on physical device
+
+---
+
+## Project Structure
+
+```
+unimatemobile/
+├── app/                          # Application screens (Expo Router)
+│   ├── _layout.tsx              # Root layout with authentication guard
+│   ├── index.tsx                # Login/registration screen
+│   ├── chat.tsx                 # AI assistant interface
+│   ├── tasks.tsx                # Task management screen
+│   ├── timetable.tsx            # Schedule viewer
+│   ├── study-session.tsx        # Study session tracker
+│   ├── notification-settings.tsx # Notification preferences
+│   └── (tabs)/                  # Tab navigation group
+│       ├── _layout.tsx          # Tab navigator configuration
+│       ├── home.tsx             # Dashboard with analytics
+│       ├── planner.tsx          # Calendar view
+│       └── courses/             # Course management
+│           ├── index.tsx        # Course list
+│           └── add.tsx          # Add/edit course
+│
+├── components/                   # Reusable UI components
+│   ├── chat/                    # Chat-specific components
+│   │   ├── ChatBubble.tsx       # Message display
+│   │   ├── ChatInput.tsx        # Message input field
+│   │   ├── EmptyState.tsx       # Empty conversation UI
+│   │   └── QuickActions.tsx     # Suggested prompts
+│   └── ui/                      # Generic UI components
+│       ├── AnimatedCard.tsx     # Card with animations
+│       ├── CourseCard.tsx       # Course display card
+│       ├── GlassCard.tsx        # Glassmorphism card
+│       ├── TaskCard.tsx         # Task display card
+│       └── StatCard.tsx         # Statistics card
+│
+├── services/                     # Business logic and API integration
+│   ├── authService.ts           # Firebase authentication
+│   ├── courseServiceFirestore.ts # Course CRUD operations
+│   ├── taskServiceFirestore.ts  # Task CRUD operations
+│   ├── studyServiceFirestore.ts # Study session management
+│   ├── timetableServiceFirestore.ts # Schedule management
+│   ├── aiServiceEnhanced.ts     # AI model integration
+│   ├── predictionService.ts     # Risk prediction algorithms
+│   ├── burnoutDetector.ts       # Burnout analysis
+│   ├── peakTimeAnalyzer.ts      # Productivity analysis
+│   ├── notificationManager.ts   # Notification scheduling
+│   ├── smartNotificationService.ts # Intelligent notification logic
+│   └── ai/                      # AI-specific services
+│       ├── ragService.ts        # RAG implementation
+│       ├── ragIndexer.ts        # Content indexing
+│       └── optimalTimePredictor.ts # Time prediction
+│
+├── contexts/                     # React Context providers
+│   └── StudySessionContext.tsx  # Global study session state
+│
+├── hooks/                        # Custom React hooks
+│   ├── useNotificationInitialization.ts # Notification setup
+│   └── useOptimizedData.ts      # Data fetching optimization
+│
+├── types/                        # TypeScript type definitions
+│   ├── index.ts                 # Core type definitions
+│   └── notification.ts          # Notification-specific types
+│
+├── constants/                    # Configuration constants
+│   ├── config.ts                # Application configuration
+│   ├── designSystem.ts          # Design tokens
+│   └── illustrations.ts         # SVG illustrations
+│
+├── utils/                        # Utility functions
+│   ├── validation.ts            # Input validation
+│   ├── errorTracking.ts         # Error logging
+│   ├── rateLimiter.ts           # Rate limiting logic
+│   └── safeAsyncStorage.ts      # Storage wrapper
+│
+├── firebase/                     # Firebase initialization
+│   └── firebaseint.ts           # Firebase config
+│
+├── android/                      # Android native project
+├── assets/                       # Images, fonts, icons
+└── scripts/                      # Build and setup scripts
+```
+
+---
+
+## Architecture
+
+### Application Architecture
+
+UniMate follows a modular architecture with clear separation of concerns:
+
+**Presentation Layer**
+- React Native components for UI rendering
+- Expo Router for navigation and routing
+- Context API for global state management
+- Custom hooks for reusable stateful logic
+
+**Business Logic Layer**
+- Service modules for domain-specific operations
+- Algorithms for prediction, analysis, and recommendation
+- Data transformation and validation logic
+- Background task coordination
+
+**Data Layer**
+- Firebase Firestore for persistent storage
+- AsyncStorage for local caching
+- Vector store for AI embeddings
+- Real-time synchronization with offline support
+
+**External Integration Layer**
+- Hugging Face API for AI model inference
+- Firebase Authentication for user management
+- Expo notification services for alerts
+- Google OAuth for social authentication
+
+### Data Flow
+
+```
+User Action → Component → Service → Firebase/AI API → Response → State Update → UI Rerender
+```
+
+### Offline Support
+
+The application implements an offline-first strategy:
+
+- Firestore offline persistence for automatic local caching
+- AsyncStorage for critical user data
+- Queued operations that synchronize when connectivity returns
+- Fallback responses for AI features when network unavailable
+- Local vector store for RAG functionality without internet
 
 ```javascript
 export default {
