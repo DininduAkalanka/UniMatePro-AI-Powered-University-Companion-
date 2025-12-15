@@ -482,7 +482,7 @@ Before installing UniMate, ensure the following software is installed on your de
 ### Step 1: Clone Repository
 
 ```bash
-git clone https://github.com/DininduAkalanka/UniMate-AI-Powered-University-Companion-V1.git
+https://github.com/DininduAkalanka/UniMatePro-AI-Powered-University-Companion-
 cd unimatemobile
 ```
 
@@ -918,7 +918,7 @@ The MIT License permits use, modification, and distribution of this software for
 **Dinindu Akalanka**
 
 - GitHub Profile: [@DininduAkalanka](https://github.com/DininduAkalanka)
-- Project Repository: [UniMate-AI-Powered-University-Companion-V1](https://github.com/DininduAkalanka/UniMate-AI-Powered-University-Companion-V1)
+- Project Repository:https://github.com/DininduAkalanka/UniMatePro-AI-Powered-University-Companion-
 - Active Branch: CourseFix
 
 ---
@@ -934,18 +934,5 @@ This project builds upon the work of numerous open-source communities and servic
 - University students who provided feedback and feature inspiration during development
 
 ---
-
-## Support and Contact
-
-For technical issues, feature requests, or general questions:
-
-- **Issue Tracker**: [GitHub Issues](https://github.com/DininduAkalanka/UniMate-AI-Powered-University-Companion-V1/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/DininduAkalanka/UniMate-AI-Powered-University-Companion-V1/discussions)
-
-When reporting issues, please include:
-- Device and operating system version
-- Steps to reproduce the problem
-- Expected versus actual behavior
-- Relevant error messages or screenshots
 
 ---
